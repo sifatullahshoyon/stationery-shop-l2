@@ -25,8 +25,7 @@ const ProductSchema: Schema = new Schema<TProduct>(
           'Educational',
           'Technology',
         ],
-        message:
-          'Category must be one of Writing, Office Supplies, Art Supplies, Educational, Technology',
+        message: 'Category must be one of {VALUE}', // mongoose এ {VALUE} লিখলে সে ঐ property এর value গুলোকে দিয়ে দেয়।
       },
     },
     description: { type: String, required: [true, 'Description is required'] },
