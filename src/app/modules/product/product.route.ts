@@ -13,6 +13,9 @@ router.get('/', productControllers.getAllProducts);
 // get single product routes
 router.get('/:productId', productControllers.getSingleProductFromDb);
 
+// UPDATE product
+router.put('/:productId', productControllers.updateProduct);
+
 // DELETE product
 router.delete('/:productId', productControllers.deleteSingleProduct);
 
