@@ -1,4 +1,4 @@
-// Create an interface representing a document in MongoDB.
+// Create an type representing a document in MongoDB.
 
 export type TProduct = {
   name: string;

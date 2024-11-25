@@ -10,11 +10,12 @@ app.use(express.json());
 app.use(cors());
 
 // application routes
+// products
 app.use('/api/v1/products', productRoutes);
+// orders
+app.use('/api/v1/orders', productRoutes);
 
 app.get('/', (req: Request, res: Response) => {
-  //   const a = 10;
-  //   res.send(a);
   res.send('Hello World!');
 });
 
