@@ -5,7 +5,7 @@ const orderSchema = new mongoose.Schema<TOrder>(
   {
     email: { type: String, required: true },
     product: {
-      type: mongoose.Schema.Types.ObjectId, // Correct reference type
+      type: mongoose.Schema.Types.ObjectId,
       ref: 'Product', // Reference to Product model
       required: true,
     },
